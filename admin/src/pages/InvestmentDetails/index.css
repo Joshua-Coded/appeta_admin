@@ -1,0 +1,23 @@
+/* src/pages/InvestmentDetails/InvestmentDetails.css */
+.investment-details-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.investment-details-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.investment-details-page p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}

@@ -1,0 +1,187 @@
+/* src/pages/Earnings/Earnings.css */
+.earnings {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.earnings h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.chart-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chart-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #374151;
+    font-weight: 500;
+}
+
+canvas {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.financial-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.summary-item {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.summary-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.summary-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.expenses-container,
+.financial-goals-container,
+.withdraw-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.expenses-container:hover,
+.financial-goals-container:hover,
+.withdraw-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.expenses-container h3,
+.financial-goals-container h3,
+.withdraw-container h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.add-button,
+.withdraw-button,
+.invest-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-button:hover,
+.withdraw-button:hover,
+.invest-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.expense-list,
+.goal-list {
+    margin-top: 20px;
+}
+
+.expense-item,
+.goal-item {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.expense-item:hover,
+.goal-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
